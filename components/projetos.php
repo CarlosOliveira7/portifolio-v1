@@ -2,7 +2,7 @@
 
 <?php 
 $projetos = [
-    [
+   /* [
         "nome" => "API GERENCIAMENTO DE EVENTOS",
         "descricao" => "A API de Eventos é uma aplicação construída em .NET Core que oferece funcionalidades para o gerenciamento de eventos. Projetada para ser simples e flexível, a API proporciona operações básicas, como criar, recuperar, atualizar e excluir eventos.",
         "finalizado" => true,
@@ -11,7 +11,8 @@ $projetos = [
         "stacks" => [".NET / C#","HTML","CSS"],
         "link" => "https://github.com/CarlosOliveira7/ApiEventos.git",
         "img" => "/images/cli3.png"
-    ],
+    ],*/
+
     [
         "nome" => "PORTIFOLIO DE APRESENTAÇÃO PESSOAL",
         "descricao" => "PORTIFOLIO DE APRESENTAÇÃO PESSOAL E PROJETOS REALIZADOS",
@@ -20,7 +21,7 @@ $projetos = [
         "ano" => "2026",
         "stacks" => ["PHP","HTML","CSS","TAILWIND"],
         "link" => "https://github.com/CarlosOliveira7/ApiEventos.git",
-        "img" => "/images/projetos/"
+        "img" => "/images/projetos/portifolio.png"
     ],
 
 ];
@@ -38,12 +39,9 @@ $cores = [
 <h1 class="text-3xl font-bold mx-2">MEUS PROJETOS</h1>
 
 <?php foreach($projetos as $proj): ?>
-        <h2 class="text-xl font-semibold">
-            <a class="mx-2" href="<?=$proj['link']  ?>"><?= $proj['nome'] ?></a>
-        </h2>
-<div class="flex flex-col gap-6 bg-slate-800 rounded-lg space-y-6 m-6 p-4 items-center mt-6">
+<div class="flex flex-col gap-1 bg-slate-800 rounded-lg space-y-6 m-6 p-4 items-center mt-6">
 
-    <img class="w-full md:w-1/4 max-w-[200px] rounded-lg justify-middle mx-4" src="<?= $proj['img'] ?>" alt="Projeto">
+    <img class="w-full md:w-1/2 lg:w-3/5 rounded-lg justiy-center mx-4" src="<?= $proj['img'] ?>" alt="Projeto">
 
     <div class="w-full md:w-3/4 space-y-3 mx-4 px-2">
         <h2 class="text-xl font-semibold">
@@ -54,7 +52,7 @@ $cores = [
         <?php if(!empty($proj['stacks'])): ?>
         <div class="flex flex-wrap gap-2">
             <?php foreach($proj['stacks'] as $stack): 
-                $classe = $cores[$stack] ?? "bg-slate-800 text-gray-300";
+                $classe = $cores[$stack] ?? "bg-slate-900 text-gray-300";
             ?>
                 <span class="<?= $classe ?> rounded px-2 py-1 text-sm font-medium">
                     <?= $stack ?>

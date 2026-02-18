@@ -39,7 +39,7 @@
         <ul class="flex gap-x-3 font-medium text-gray-200">
             <li><a href="https://github.com/CarlosOliveira7" target="_blank" class="p-3 rounded-lg hover:bg-slate-950 transition-colors duration-300">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/devcarlosz/" target="_blank" class="p-3 rounded-lg hover:bg-slate-950 transition-colors duration-300">LinkedIn</a></li>
-            <li><a href="https://wa.me/qr/MPTPWJPWTNTVF1" class="p-3 rounded-lg hover:bg-slate-950 transition-colors duration-300">Contate-me</a></li>
+            <li><a href="https://wa.me/5599991516037" class="p-3 rounded-lg hover:bg-slate-950 transition-colors duration-300">Contate-me</a></li>
 
         </ul>
     </div>
